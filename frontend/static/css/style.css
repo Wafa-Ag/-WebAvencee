@@ -1,0 +1,117 @@
+/* Réinitialisation des styles par défaut pour le corps (body) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Styles pour la barre de navigation (nav) */
+nav {
+    background-color: #1f3651;
+    color: white;
+    padding: 28px;
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 39px;
+    transition: color 0.3s;
+    display: inline-block; /* Afficher les liens en ligne */
+    background-color: #406897;
+    width:10%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Effet de survol pour les liens de la barre de navigation */
+nav a:hover {
+    color: #406897;
+    animation-name: color-change;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Styles pour la zone d'affichage principale (#app) */
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* Styles pour le lien "Voir les citys" avec la classe .btn-voir-citys */
+.btn-voir-citys {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4e4685;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-voir-citys:hover {
+    background-color: #3d385f;
+  }
+
+  .citys {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cities, .countries{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .city, .country{
+    list-style-type: none;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+    background-color: #1d484d;
+    border-radius: 5px;
+    border: 1px solid #1d484d;
+  }
+  .city a, .country{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+  }
+
+.city:hover, .country:hover {
+    animation-name: color-change;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.city:hover a, .country:hover{
+    color: #1d484d;
+}
+
+  @keyframes color-change {
+    0% {
+      background-color: #1d484d;
+    }
+    100% {
+      background-color: white;
+    }
+  }
